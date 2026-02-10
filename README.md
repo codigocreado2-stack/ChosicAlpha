@@ -38,15 +38,9 @@ Cree un bot para scrapear la web y en base a lo obtenido se fue construyendo, pu
 ### Desde el repositorio
 
 ```bash
-git clone <url-del-repositorio>
+git clone <https://github.com/codigocreado2-stack/ChosicAlpha>
 cd ChosicAlpha
 pip install -e .
-```
-
-### Desde PyPI (cuando esté disponible)
-
-```bash
-pip install ChosicAlpha
 ```
 
 ### Requisitos
