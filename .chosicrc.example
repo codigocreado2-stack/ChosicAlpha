@@ -1,0 +1,62 @@
+# ChosicAlpha Configuration File (.chosicrc)
+#
+# Copiar este archivo a:
+# - .chosicrc (en el directorio actual)
+# - ~/.chosicrc (en tu directorio home)
+#
+# Los argumentos de línea de comandos siempre overridden los valores aquí.
+
+# Configuración de búsqueda
+[search]
+# Límite de resultados por defecto
+limit = 20
+
+# Tipo de búsqueda por defecto (track, artist, album)
+type = track
+
+# Carpeta de salida para descargas
+out = ./downloads
+
+# Número de descargas concurrentes
+concurrency = 4
+
+# Descargar automáticamente
+download = false
+
+# Sobrescribir archivos existentes
+overwrite = false
+
+# Configuración de Logging
+[logging]
+# Valores posibles: false (default/warning), true (verbose/info), debug
+verbose = false
+debug = false
+quiet = false
+
+# Configuración de API
+[api]
+# Timeout en segundos para peticiones
+timeout = 30
+
+# Base URL de la API
+base_url = https://www.chosic.com/api/tools
+
+# Leer variables de entorno (CHOSIC_COOKIE, CHOSIC_X_WP_NONCE, etc.)
+read_env = true
+
+# Configuración de Fetch
+[fetch]
+# Descargar todas las páginas por defecto
+fetch_all = false
+
+# Tamaño de página al hacer fetch_all
+page_size = 10
+
+# Archivo de salida para todos los géneros
+fetch_genres_file = all_genres.json
+
+# Archivo de salida para audio features
+features_file = features.json
+
+# Formato de salida
+raw = false
